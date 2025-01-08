@@ -58,9 +58,9 @@ public class TokenController {
       // Imprimir o access_token armazenado
       System.out.println("Access Token: " + accessToken);
 
-   session.setAttribute("access_token", result.getBody());
+      session.setAttribute("access_token", result.getBody());
 
-    System.out.println(session.getAttribute("access_token"));
+//    System.out.println(session.getAttribute("access_token"));
 
    return result;
 
