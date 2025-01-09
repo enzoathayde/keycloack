@@ -53,14 +53,14 @@ public class TokenController {
       String accessToken = (String) responseMap.get("access_token");
 
 
-      session.setAttribute("nosso_access_token", accessToken); // access token está aqui em accessToken
+      session.setAttribute("nosso_access_token", accessToken); // access token está aqui
 
       // Imprimir o access_token armazenado
       System.out.println("Access Token: " + accessToken);
 
       session.setAttribute("access_token", result.getBody());
 
-//    System.out.println(session.getAttribute("access_token"));
+        //    System.out.println(session.getAttribute("access_token"));
 
    return result;
 
